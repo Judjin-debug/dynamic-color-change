@@ -3,7 +3,7 @@ import React from 'react'
 const CommandLine = ({ color, setColor }) => {
   return (
     <form className='colorForm' onSubmit={(e) => e.preventDefault()}>
-      <label htmlFor="color"></label>
+      <label htmlFor="color">Add Color Name:</label>
       <input
         autoFocus
         type='text'

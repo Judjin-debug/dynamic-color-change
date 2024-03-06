@@ -39,6 +39,11 @@ body {
   box-shadow: 5px 5px 5px gray;
 }
 
+.colorForm label {
+  position: absolute;
+  left: -99999px;
+}
+
 .colorForm input[type='text'] {
   font-size: 1rem;
   padding: 0.25rem;
