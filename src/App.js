@@ -4,16 +4,23 @@ import CommandLine from './CommandLine'
 import { useState } from 'react'
 
 function App() {
-  const [color, setColor] = useState('');
+  const [colorValue, setColorValue] = useState('');
+  const [hexValue, setHexValue] = useState('');
+  const [isDarkText, setIsDarkText] = useState(true);
 
   return (
     <div className='App'>
       <ColorSquare 
-        color={color}
+        colorValue={colorValue}
+        hexValue={hexValue}
+        isDarkText={isDarkText}
       />
       <CommandLine 
-        color={color}
-        setColor={setColor}
+        colorValue={colorValue}
+        setColorValue={setColorValue}
+        setHexValue={setHexValue}
+        isDarkText={isDarkText}
+        setIsDarkText={setIsDarkText}
       />
     </div>
   )
