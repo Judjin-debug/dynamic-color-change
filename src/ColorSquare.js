@@ -3,16 +3,16 @@ import React from 'react'
 const ColorSquare = ({ color }) => {
   return (
     <div
-      style={{background : color}}
+      style={{backgroundColor : color}}
       className='colorSquare'
     >
-      {color.length ? (
-        color
-      ) : (
-        'Empty Value'
-      )}
+      {color ? color : 'Empty Value'}
     </div>
   )
 }
+
+// ColorSquare.defaultProps = {
+//   color: "Empty Color Value"
+// }
 
 export default ColorSquare

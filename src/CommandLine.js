@@ -5,9 +5,10 @@ const CommandLine = ({ color, setColor }) => {
     <form className='colorForm' onSubmit={(e) => e.preventDefault()}>
       <label htmlFor="color"></label>
       <input
-        id='color'
+        autoFocus
         type='text'
         placeholder='Add Color Name'
+        required
         value={color}
         onChange={(e) => setColor(e.target.value)}
       />
